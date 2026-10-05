@@ -1,0 +1,123 @@
+/* Estilos só da página de demo (não fazem parte do componente) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+body {
+  margin: 0;
+  background: #0a0e0c;
+  color: #eef3ef;
+  font-family: 'Outfit Variable', 'Outfit', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.demo-topo,
+.demo-fim {
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  min-height: 100svh;
+  padding: 24px;
+  text-align: center;
+}
+.demo-fim {
+  min-height: 70svh;
+}
+.demo-topo h1 {
+  margin: 0;
+  font-size: clamp(44px, 9vw, 104px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.demo-topo h1 em,
+.demo-fim h2 {
+  color: #42ad73;
+  font-style: normal;
+}
+.demo-topo p,
+.demo-fim p {
+  margin: 0;
+  color: #8e9b93;
+}
+.demo-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.demo-seta {
+  margin-top: 24px;
+  font-size: 28px;
+  animation: demo-pula 1.6s ease-in-out infinite;
+}
+@keyframes demo-pula {
+  50% {
+    transform: translateY(8px);
+  }
+}
+.demo-fim h2 {
+  margin: 0;
+  font-size: 40px;
+}
+code {
+  font-family: 'JetBrains Mono', monospace;
+  color: #eef3ef;
+}
+.demo-troca {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 100;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(13, 20, 17, 0.85);
+  backdrop-filter: blur(8px);
+  transform: translateX(-50%);
+}
+.demo-troca button {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #8e9b93;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.demo-troca button.on {
+  background: #eef3ef;
+  color: #0a0e0c;
+}
+.demo-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.demo-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 24px;
+  border: 1.5px solid #42ad73;
+  border-radius: 999px;
+  background: #42ad73;
+  color: #06140c;
+  font-weight: 700;
+  text-decoration: none;
+}
+.demo-btn.ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #eef3ef;
+}
+.demo-btn:hover {
+  filter: brightness(1.08);
+}
