@@ -1,0 +1,44 @@
+{
+  "name": "site-nascendo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Scroll-driven React section that shows a website being built: briefing, wireframe, branding, content, interactions, responsive, live. Powered by GSAP ScrollTrigger.",
+  "keywords": [
+    "react",
+    "gsap",
+    "scrolltrigger",
+    "scroll-animation",
+    "scrollytelling",
+    "landing-page",
+    "portfolio",
+    "agency"
+  ],
+  "author": "Kodra (https://kodratecnologia.com.br)",
+  "license": "MIT",
+  "homepage": "https://nicolliborges.github.io/site-nascendo/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicolliBorges/site-nascendo.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.2"
+  }
+}
